@@ -1,0 +1,29 @@
+https://devclass.com.br/curso/php
+/curso seria o controller
+/php seria o método
+
+index - quando carrega o controller e não passa o método
+https://devclass.com.br/curso
+
+show - quando quer pegar um registro em específico
+https://devclass.com.br/curso/show/php
+
+edit - mostra formulário para atualizar registro
+https://devclass.com.br/curso/edit/12
+
+update - atualiza o registro no banco
+
+create - mostra o form para cadastrar o registro
+https://devclass.com.br/curso/create
+
+store - cadastrar registro no banco
+
+destroy - deletar registr do banco ou logout do sistema
+https://devclass.com.br/curso/destroy/12
+
+Model trabalha com o BD, View são as telas, Controller gerencia td isso.
+
+Pasta assets são os recursos que o site vai utilizar, img, js, css...
+
+Após criar o composer.json e configura-lo, rodar composer dump-autoload -o
+    Vai criar uma pasta vendor
