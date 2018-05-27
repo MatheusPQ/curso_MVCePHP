@@ -27,3 +27,30 @@ Pasta assets são os recursos que o site vai utilizar, img, js, css...
 
 Após criar o composer.json e configura-lo, rodar composer dump-autoload -o
     Vai criar uma pasta vendor
+    
+    "autoload":{
+        "psr-4":{
+            "app\\":"app",
+            "core\\":"core"
+        }
+    }
+        O namespace "app" será procurado dentro da pasta app.
+        Mesmo para core.
+    
+    Autoload é semelhante ao spl_autoload_register.. para carregar as classes
+
+Se digitar apenas 'composer require', vai aparecer a opção p/ procurar um pacote.
+    Digite 'twig'
+    Em seguida, digite 0 (p/ instalar o primeiro da lista)
+    Aperte Enter (deixe em branco) p/ baixar a última versão
+    Vai perguntar se quer baixar algum outro pacote. Digite 1 para baixar as extensões do twig
+    Enter
+
+    Pacotes baixados:
+        twig/twig
+        twig/extensions
+
+    Twig é um sistema de templates para trabalhar com as views.
+
+php -S localhost:8000 -t public
+    -t public especifica a pasta root do projeto
