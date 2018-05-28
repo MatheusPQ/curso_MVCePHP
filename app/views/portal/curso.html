@@ -1,0 +1,18 @@
+{% extends 'portal/layout.html' %}
+
+{% block portal %}
+
+    <!-- {{ curso | truncate(100) }}  -->
+    <!-- Limita o número de caracteres a ser mostrados -->
+
+    {{ teste() }}
+
+    <!-- No caso das models... -->
+    <!-- {% for curso in cursos %}
+        {{ curso.title }}
+    {% endfor %} -->
+    
+    {% set name = "fulano" %}
+    {{ name }}
+
+{% endblock %}
